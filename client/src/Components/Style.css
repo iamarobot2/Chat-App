@@ -31,7 +31,7 @@
     font-size: 1.25rem;
     margin-left: 10px;
     background-color: inherit;
-    color: black;
+    color: rgba(0, 0, 0, 0.54);
 }
 .sbconversation
 {
@@ -100,14 +100,63 @@
 }
 .chatArea-header
 {
-    background-color: orange;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.header-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;
 }
 .messages-container
 {
-    background-color: aquamarine;
+    background-color: white;
     flex:1;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
 }
 .text-input-area
 {
-    background-color: yellow;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.other-message-container
+{
+    background-color: #d9d9d9;
+}
+.self-message-conatiner
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.messageBox
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #63d7b0;
+    width: max-content;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.self-timeStamp
+{
+    align-self: flex-end;
+    font-size: 0.75rem;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
